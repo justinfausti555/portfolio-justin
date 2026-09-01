@@ -78,6 +78,7 @@ const modalTech = document.getElementById('modalTech');
 const modalUseCases = document.getElementById('modalUseCases');
 const modalBenefits = document.getElementById('modalBenefits');
 const modalClose = document.querySelector('.modal__close');
+const modalBack = document.querySelector('.modal__back');
 const modalBackdrop = document.querySelector('.modal__backdrop');
 const body = document.body;
 
@@ -123,6 +124,10 @@ document.querySelectorAll('.is-project').forEach((button) => {
 
 if (modalClose) {
   modalClose.addEventListener('click', closeProjectModal);
+}
+
+if (modalBack) {
+  modalBack.addEventListener('click', closeProjectModal);
 }
 
 if (modalBackdrop) {
