@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 780" role="img" aria-label="Justin portrait placeholder">
+  <defs>
+    <linearGradient id="bg" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#0d1723"/>
+      <stop offset="100%" stop-color="#13273b"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#7dd3fc"/>
+      <stop offset="100%" stop-color="#c084fc"/>
+    </linearGradient>
+  </defs>
+  <rect width="720" height="780" rx="48" fill="url(#bg)"/>
+  <circle cx="360" cy="210" r="128" fill="#dfeaf8" opacity="0.9"/>
+  <path d="M256 660c28-118 130-152 204-152 87 0 164 38 184 152H256z" fill="#c9d7e8" opacity="0.92"/>
+  <path d="M290 250c18-87 108-147 191-133 74 18 151 90 137 175-15 88-87 123-187 119-75-2-134-66-141-161z" fill="#1e2c3a"/>
+  <path d="M340 170c18 8 34 6 52 0l22 38c-24 24-52 32-90 16l16-54z" fill="#0f2335" opacity="0.9"/>
+  <text x="360" y="395" text-anchor="middle" font-size="150" font-weight="800" font-family="Segoe UI, Arial, sans-serif" fill="url(#glow)" letter-spacing="10">JF</text>
+</svg>
