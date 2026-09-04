@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="pt-AO">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ferramentas locais para aprendizagem de fundamentos de segurança.">
+  <title>Laboratório de Segurança</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="app">
+    <header><p class="eyebrow">Aprendizagem autorizada</p><h1>Laboratório de segurança</h1><p>Ferramentas locais para estudar URLs, hashes e codificação.</p></header>
+    <section class="panel"><h2>Analisador de URL</h2><div class="row"><input id="url" placeholder="https://exemplo.com"><button id="analyze" type="button">Analisar</button></div><ul id="url-result" class="result"></ul></section>
+    <section class="panel"><h2>Hash SHA-256</h2><div class="row"><input id="hash-input" placeholder="Texto para transformar em hash"><button id="hash" type="button">Gerar hash</button></div><output id="hash-output"></output></section>
+    <section class="panel"><h2>Base64</h2><textarea id="base-input" rows="3" placeholder="Texto para codificar ou descodificar"></textarea><div class="actions"><button id="encode" type="button">Codificar</button><button id="decode" type="button">Descodificar</button></div><output id="base-output"></output></section>
+    <p class="notice">Use estas ferramentas apenas com dados próprios ou em ambientes onde tens autorização.</p>
+  </main>
+</body>
+</html>

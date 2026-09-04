@@ -95,4 +95,20 @@ export const projectItems = [
     link: 'https://github.com/justinfausti555/portfolio-justin/tree/main/projects/despesas-js',
     demo: '#projects',
   },
+  {
+    name: 'DevBoard',
+    preview: 'Kanban project dashboard',
+    description: 'A responsive Kanban board with search, task creation, drag and drop, and local project persistence.',
+    tags: ['HTML', 'CSS', 'JavaScript'],
+    link: 'https://github.com/justinfausti555/portfolio-justin/tree/main/projects/devboard',
+    demo: '#projects',
+  },
+  {
+    name: 'Laboratório de Segurança',
+    preview: 'Authorized security toolkit',
+    description: 'A local learning toolkit for URL checks, SHA-256 hashes, and Base64 encoding and decoding.',
+    tags: ['HTML', 'CSS', 'JavaScript', 'Web Crypto'],
+    link: 'https://github.com/justinfausti555/portfolio-justin/tree/main/projects/lab-seguranca',
+    demo: '#cybersecurity',
+  },
 ];
