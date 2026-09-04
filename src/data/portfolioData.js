@@ -49,11 +49,6 @@ export const skillItems = [
     accent: '#7fd6bf',
   },
   {
-    name: 'C#',
-    short: 'Object-oriented app architecture and tooling.',
-    accent: '#8ecae6',
-  },
-  {
     name: 'Git & GitHub',
     short: 'Version control and collaborative development.',
     accent: '#b39ddb',
