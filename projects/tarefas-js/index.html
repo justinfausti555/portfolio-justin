@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="pt-AO">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minhas Tarefas</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="app">
+    <p class="eyebrow">Projeto JavaScript</p>
+    <h1>Minhas tarefas</h1>
+    <p class="intro">Organiza o dia com uma lista simples e persistente.</p>
+    <form id="task-form" class="task-form">
+      <label class="sr-only" for="task-input">Nova tarefa</label>
+      <input id="task-input" type="text" placeholder="Adicionar uma tarefa..." maxlength="100" required>
+      <button type="submit">Adicionar</button>
+    </form>
+    <div class="toolbar">
+      <span id="task-count">0 tarefas</span>
+      <div class="filters" aria-label="Filtrar tarefas">
+        <button class="filter active" data-filter="all" type="button">Todas</button>
+        <button class="filter" data-filter="pending" type="button">Pendentes</button>
+        <button class="filter" data-filter="done" type="button">Concluídas</button>
+      </div>
+    </div>
+    <ul id="task-list" class="task-list"></ul>
+    <p id="empty-state" class="empty-state">Ainda não existem tarefas.</p>
+  </main>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="pt-AO">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rastreador de Despesas</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="app">
+    <p class="eyebrow">Projeto JavaScript</p>
+    <h1>Rastreador de despesas</h1>
+    <form id="expense-form" class="form"><input id="description" placeholder="Descrição" required><input id="amount" type="number" min="0.01" step="0.01" placeholder="Valor" required><button type="submit">Adicionar</button></form>
+    <div class="summary"><span>Total</span><strong id="total">0,00 Kz</strong></div>
+    <ul id="expense-list"></ul><p id="empty">Nenhuma despesa registada.</p>
+  </main>
+</body>
+</html>

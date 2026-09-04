@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="pt-AO">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerador de Palavra-passe</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="card">
+    <p class="eyebrow">Projeto JavaScript</p>
+    <h1>Gerador de palavra-passe</h1>
+    <p class="intro">Cria palavras-passe aleatórias e verifica a força localmente.</p>
+    <div class="output"><input id="password" aria-label="Palavra-passe gerada" readonly><button id="copy" type="button">Copiar</button></div>
+    <label for="length">Tamanho <output id="length-value">16</output></label>
+    <input id="length" type="range" min="8" max="32" value="16">
+    <div class="options"><label><input id="uppercase" type="checkbox" checked> Maiúsculas</label><label><input id="numbers" type="checkbox" checked> Números</label><label><input id="symbols" type="checkbox" checked> Símbolos</label></div>
+    <div class="meter"><span id="strength-bar"></span></div><p id="strength">Força: forte</p>
+    <button id="generate" class="primary" type="button">Gerar nova palavra-passe</button>
+  </main>
+</body>
+</html>
