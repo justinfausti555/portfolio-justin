@@ -10,6 +10,16 @@ Ferramenta educativa em Python para capturar imagens PNG de páginas web que o u
 - Permite capturar apenas a área visível ou a página inteira.
 - Não cria links de controlo, não acede a dispositivos e não funciona como ferramenta de vigilância.
 
+## Modo educativo: captura do ecrã local
+
+O ficheiro `screenlab.py` demonstra uma captura consentida do ecrã do próprio computador. A execução exige que o utilizador escreva `CAPTURAR` e guarda a imagem apenas na pasta local.
+
+```bash
+python screenlab.py
+```
+
+Este modo não recebe links, não funciona remotamente e não envia a imagem para a internet.
+
 ## Instalação
 
 ```bash
