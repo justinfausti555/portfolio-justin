@@ -1,6 +1,6 @@
 import { Canvas, useFrame } from '@react-three/fiber';
 import { ContactShadows, Float, Sparkles } from '@react-three/drei';
-import { useMemo, useRef } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import * as THREE from 'three';
 
 function FloatingParticles() {
@@ -164,11 +164,39 @@ function SceneContent() {
 }
 
 export default function WorldScene() {
+  const [webglReady, setWebglReady] = useState(true);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const mobileQuery = window.matchMedia('(max-width: 760px), (pointer: coarse)');
+    const testCanvas = document.createElement('canvas');
+    const context = testCanvas.getContext('webgl') || testCanvas.getContext('experimental-webgl');
+
+    setIsMobile(mobileQuery.matches);
+    setWebglReady(Boolean(context));
+  }, []);
+
+  const fallback = (
+    <div className="scene-fallback" aria-label="Interactive developer workspace">
+      <div className="fallback-grid" />
+      <div className="fallback-orb fallback-orb-one" />
+      <div className="fallback-orb fallback-orb-two" />
+      <div className="fallback-terminal">&gt; system.ready</div>
+      <div className="fallback-shield">JF</div>
+    </div>
+  );
+
+  if (!webglReady) {
+    return fallback;
+  }
+
   return (
     <Canvas
       className="world-canvas"
-      shadows
-      dpr={[1, 2]}
+      shadows={!isMobile}
+      dpr={[1, isMobile ? 1 : 2]}
+      gl={{ antialias: !isMobile, powerPreference: 'high-performance' }}
+      fallback={fallback}
       camera={{ position: [0, 1.4, 8], fov: 42 }}
     >
       <color attach="background" args={['#060b14']} />
