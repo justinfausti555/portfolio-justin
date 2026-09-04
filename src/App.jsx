@@ -4,7 +4,6 @@ import WorldScene from './components/WorldScene';
 import { navigation, personalInfo, projectItems, skillItems } from './data/portfolioData';
 import justinPortraitMain from './assets/portraits/justin-1.jpeg';
 import justinPortrait2 from './assets/portraits/justin-2.jpeg';
-import justinPortrait3 from './assets/portraits/justin-3.jpeg';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -199,9 +198,6 @@ continuous learning`}</pre>
                 </div>
                 <div className="portrait-tile">
                   <img src={justinPortrait2} alt="Justin portrait variant 2" />
-                </div>
-                <div className="portrait-tile">
-                  <img src={justinPortrait3} alt="Justin portrait variant 3" />
                 </div>
                 <div className="portrait-tile">
                   <img src={justinPortraitMain} alt="Justin portrait variant 4" />
