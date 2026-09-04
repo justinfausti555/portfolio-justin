@@ -178,11 +178,11 @@ export default function WorldScene() {
   }, []);
 
   const fallback = (
-    <div className="scene-fallback" aria-label="Interactive developer workspace">
+    <div className="scene-fallback" aria-label="Espaço de trabalho interativo do desenvolvedor">
       <div className="fallback-grid" />
       <div className="fallback-orb fallback-orb-one" />
       <div className="fallback-orb fallback-orb-two" />
-      <div className="fallback-terminal">&gt; system.ready</div>
+      <div className="fallback-terminal">&gt; sistema.pronto</div>
       <div className="fallback-shield">JF</div>
     </div>
   );
