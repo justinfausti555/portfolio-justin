@@ -16,6 +16,7 @@ Portfolio pessoal em React, com uma experiência 3D e projetos práticos de dese
 - [Rastreador de Despesas](projects/despesas-js): registo de despesas e cálculo de totais em kwanzas.
 - [DevBoard](projects/devboard): quadro Kanban com pesquisa, criação e drag-and-drop.
 - [Laboratório de Segurança](projects/lab-seguranca): análise local de URLs, SHA-256 e Base64.
+- [Justin:F05 WebSnapshot](projects/justin-f05-websnapshot): captura educativa de páginas web autorizadas com Python e Playwright.
 
 ## Executar o portfolio
 
