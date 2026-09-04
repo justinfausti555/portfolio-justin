@@ -1,4 +1,4 @@
-"""Justin:F05 WebSnapshot: captura educativa de páginas web autorizadas."""
+"""Justin:F05 WebSnapshot: captura imagens de páginas web autorizadas."""
 
 import argparse
 import re
@@ -35,7 +35,7 @@ def capturar(url: str, pasta: Path, pagina_inteira: bool) -> Path:
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Captura PNG de uma página web autorizada.")
+    parser = argparse.ArgumentParser(description="Captura uma imagem PNG de uma página web autorizada.")
     parser.add_argument("url", type=validar_url, help="URL da página que tens autorização para capturar")
     parser.add_argument("-o", "--output", default="capturas", help="Pasta onde a imagem será guardada")
     parser.add_argument("--pagina-inteira", action="store_true", help="Captura toda a página, não apenas a área visível")
