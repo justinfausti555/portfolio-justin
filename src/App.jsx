@@ -3,7 +3,6 @@ import './App.css';
 import WorldScene from './components/WorldScene';
 import { navigation, personalInfo, projectItems, skillItems } from './data/portfolioData';
 import justinPortraitMain from './assets/portraits/justin-1.jpeg';
-import justinPortrait2 from './assets/portraits/justin-2.jpeg';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -195,9 +194,6 @@ continuous learning`}</pre>
               <div className="portrait-gallery" aria-label="Portrait gallery">
                 <div className="portrait-tile">
                   <img src={justinPortraitMain} alt="Justin portrait variant 1" />
-                </div>
-                <div className="portrait-tile">
-                  <img src={justinPortrait2} alt="Justin portrait variant 2" />
                 </div>
                 <div className="portrait-tile">
                   <img src={justinPortraitMain} alt="Justin portrait variant 4" />

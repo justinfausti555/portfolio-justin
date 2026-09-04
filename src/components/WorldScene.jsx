@@ -174,6 +174,7 @@ export default function WorldScene() {
 
     setIsMobile(mobileQuery.matches);
     setWebglReady(Boolean(context));
+
   }, []);
 
   const fallback = (
@@ -197,6 +198,12 @@ export default function WorldScene() {
       dpr={[1, isMobile ? 1 : 2]}
       gl={{ antialias: !isMobile, powerPreference: 'high-performance' }}
       fallback={fallback}
+      onCreated={({ gl }) => {
+        gl.domElement.addEventListener('webglcontextlost', (event) => {
+          event.preventDefault();
+          setWebglReady(false);
+        });
+      }}
       camera={{ position: [0, 1.4, 8], fov: 42 }}
     >
       <color attach="background" args={['#060b14']} />
